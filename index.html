@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<title>NewsApi</title>
+		<script defer type="text/javascript" src="./assets/js/main.js"></script>
+	</head>
+	<body>
+		<header>
+			<section>
+				<h2>Top Country Headlines</h2>
+				<form action="">
+					<div class="wrap-wrapper">
+						<div class="activity-wrapper">
+							<div class="activity">
+								<div class="select_trigger">
+									<span>de</span>
+									<div class="arrow"></div>
+								</div>
+								<div class="select-options" id="language">
+									<span class="select-option selected" data-value="de">de</span>
+									<span class="select-option" data-value="ar">ar</span>
+									<span class="select-option" data-value="en"> en </span>
+									<span class="select-option" data-value="es"> es </span>
+									<span class="select-option" data-value="fr"> fr </span>
+									<span class="select-option" data-value="he"> he </span>
+									<span class="select-option" data-value="it"> it </span>
+									<span class="select-option" data-value="nl"> nl </span>
+									<span class="select-option" data-value="no"> no </span>
+									<span class="select-option" data-value="pt"> pt </span>
+									<span class="select-option" data-value="ru"> ru </span>
+									<span class="select-option" data-value="sv"> sv </span>
+									<span class="select-option" data-value="ud"> ud </span>
+									<span class="select-option" data-value="zh"> zh </span>
+								</div>
+							</div>
+						</div>
+						<div class="activity-wrapper">
+							<div class="activity">
+								<div class="select_trigger">
+									<span>general</span>
+									<div class="arrow"></div>
+								</div>
+								<div class="select-options" id="category">
+									<span class="select-option selected" data-value="general"
+										>general</span
+									>
+									<span class="select-option" data-value="entertainment"
+										>entertainment</span
+									>
+									<span class="select-option" data-value="business">
+										business
+									</span>
+									<span class="select-option" data-value="health">
+										health
+									</span>
+									<span class="select-option" data-value="science">
+										science
+									</span>
+									<span class="select-option" data-value="sports">
+										sports
+									</span>
+									<span class="select-option" data-value="technology">
+										technology
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button id="btnHeadlines" class="btn">Suche starten</button>
+				</form>
+			</section>
+		</header>
+		<main>
+			<section>
+				<h2>News</h2>
+				<form action="">
+					<label for="keyword"></label>
+					<input
+						type="text"
+						name="keyword"
+						id="keyword"
+						placeholder="Keyword/phrase"
+					/>
+					<div class="dates">
+						<div>
+							<label for="date">from</label>
+							<input
+								type="date"
+								name="dateFrom"
+								id="dateFrom"
+								placeholder="DateFrom"
+							/>
+						</div>
+						<div>
+							<label for="date">to</label>
+							<input
+								type="date"
+								name="dateTo"
+								id="dateTo"
+								placeholder="DateTo"
+							/>
+						</div>
+					</div>
+					<div class="activity-wrapper">
+						<div class="activity">
+							<div class="select_trigger">
+								<span>de</span>
+								<div class="arrow"></div>
+							</div>
+							<div class="select-options" id="language">
+								<span class="select-option selected" data-value="de">de</span>
+								<span class="select-option" data-value="ar">ar</span>
+								<span class="select-option" data-value="en"> en </span>
+								<span class="select-option" data-value="es"> es </span>
+								<span class="select-option" data-value="fr"> fr </span>
+								<span class="select-option" data-value="he"> he </span>
+								<span class="select-option" data-value="it"> it </span>
+								<span class="select-option" data-value="nl"> nl </span>
+								<span class="select-option" data-value="no"> no </span>
+								<span class="select-option" data-value="pt"> pt </span>
+								<span class="select-option" data-value="ru"> ru </span>
+								<span class="select-option" data-value="sv"> sv </span>
+								<span class="select-option" data-value="ud"> ud </span>
+								<span class="select-option" data-value="zh"> zh </span>
+							</div>
+						</div>
+					</div>
+					<div class="activity-wrapper">
+						<div class="activity">
+							<div class="select_trigger">
+								<span>relevancy</span>
+								<div class="arrow"></div>
+							</div>
+							<div class="select-options" id="sortBy">
+								<span class="select-option selected" data-value="relevancy"
+									>relevancy</span
+								>
+								<span class="select-option" data-value="popularity"
+									>popularity</span
+								>
+								<span class="select-option" data-value="publishedAt">
+									publishedAt
+								</span>
+							</div>
+						</div>
+					</div>
+					<button id="btn" class="btn">Suche starten</button>
+				</form>
+			</section>
+			<section id="output"></section>
+		</main>
+	</body>
+</html>
