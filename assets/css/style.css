@@ -5,10 +5,10 @@
 
 :root {
 	--main-color: #cac4b0;
-	--main-font-color: #7e7e7e;
+	--main-font-color: #000000;
 	--main-from-color: #cfcfcf;
-	--main-opacity-color: #c0c0c020;
-	--second-color: #dfcea1;
+	--main-opacity-color: #c0c0c07e;
+	--second-color: #d8c389;
 	--main-background: #f0e5dd;
 }
 
@@ -228,13 +228,14 @@ input {
 	border-radius: 20px;
 	background-color: var(--main-opacity-color);
 	margin: 10px 10px 10px 10px;
-	padding: 10px;
+	/*  padding: 10px;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
+	/* filter: blur(20px); */
 }
 .articles p,
 .articles h2,
@@ -269,4 +270,16 @@ input {
 	border: 1px solid var(--second-color);
 	padding: 5px;
 	border-radius: 20px;
+	transition: background-color 0.5s, color 0.5s;
+}
+.articles a:hover {
+	background-color: var(--second-color);
+	color: white;
+}
+.opacityMe {
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	background-color: var(--main-opacity-color);
+	padding: 10px;
 }

@@ -67,7 +67,7 @@ function fetchUrl(url) {
 				}
 
 				let articleContent = `
-            
+            <div class="opacityMe">
             <h2>${articles["title"]}</h2>
             <div>
                 <p>${articles["content"]}</p>
@@ -78,7 +78,7 @@ function fetchUrl(url) {
             </div>
             <a href=${articles["url"]} target="_blank">Read more
             </a>
-            
+            </div>
             `;
 				article.insertAdjacentHTML("beforeEnd", articleContent);
 				outputSection.appendChild(article);
