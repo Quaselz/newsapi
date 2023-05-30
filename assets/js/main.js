@@ -49,6 +49,15 @@ function fetchUrl(url) {
 			outputSection.innerHTML = "";
 			data["articles"].forEach((articles) => {
 				const article = document.createElement("article");
+				if (
+					articles["urlToImage"] !== null ||
+					articles["urlToImage"] !== undefined
+				) {
+					article.setAttribute(
+						"style",
+						`background-image: url(${articles["urlToImage"]})`
+					);
+				}
 				//console.log(articles);
 				article.classList.add("articles");
 				if (articles["content"] !== null) {

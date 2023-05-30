@@ -232,6 +232,9 @@ input {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
 .articles p,
 .articles h2,
