@@ -238,7 +238,7 @@ input:-moz-placeholder {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
-	box-shadow: 0 0 5px 1px black;
+	box-shadow: 0 0 5px 1px var(--main-color);
 	transition: transform 0.5s;
 	/* filter: blur(20px); */
 }
