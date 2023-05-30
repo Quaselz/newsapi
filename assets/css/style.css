@@ -95,6 +95,9 @@ input {
 	width: 100%;
 	margin-bottom: 10px;
 }
+input:-moz-placeholder {
+	color: var(--main-font-color);
+}
 
 .btn {
 	margin: 2rem;
@@ -235,7 +238,12 @@ input {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
+	box-shadow: 0 0 5px 1px black;
+	transition: transform 0.5s;
 	/* filter: blur(20px); */
+}
+article:hover {
+	transform: scale(1.02);
 }
 .articles p,
 .articles h2,
@@ -267,7 +275,7 @@ input {
 }
 .articles a {
 	font-size: 1.5rem;
-	border: 1px solid var(--second-color);
+	border: 2px solid var(--second-color);
 	padding: 5px;
 	border-radius: 20px;
 	transition: background-color 0.5s, color 0.5s;
