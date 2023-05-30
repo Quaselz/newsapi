@@ -110,3 +110,11 @@ for (const option of document.querySelectorAll(".select-option")) {
 		}
 	});
 }
+
+window.addEventListener("click", function (e) {
+	for (const select of document.querySelectorAll(".activity")) {
+		if (!select.contains(e.target)) {
+			select.classList.remove("open");
+		}
+	}
+});
